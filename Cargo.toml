@@ -1,0 +1,15 @@
+[package]
+name = "error-chain-utils"
+version = "0.1.0"
+edition = "2018"
+license = "Unlicense"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "error_chain_utils"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+error-chain-utils-macros = { path = "macros" }
+error-chain = "0.12.4"

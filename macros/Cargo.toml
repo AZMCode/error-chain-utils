@@ -1,0 +1,15 @@
+[package]
+name = "error-chain-utils-macros"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "error_chain_utils_lib"
+crate-type = [ "lib" ]
+
+[dependencies]
+proc-macro2 = "1.0.28"
+syn = { version = "1.0.74", features = ["proc-macro","parsing","full"] }
+quote = "1.0.9"
